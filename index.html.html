@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台中市新社區 3小時精華遊</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-bg': '#F8FAFC', // Soft off-white
+                        'dark-text': '#1F2937',  // Dark grey for body text
+                        'accent': '#00D2A6',     // Vibrant teal
+                        'light-accent': '#C5FCEE', // Lighter teal for subtle elements
+                        'card-bg': 'rgba(255, 255, 255, 0.9)', // Slightly transparent white for cards
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'sans-serif'],
+                        body: ['Inter', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: theme('colors.primary-bg');
+            color: theme('colors.dark-text');
+            line-height: 1.75; /* Generous line height */
+        }
+        h1, h2, h3 {
+            font-family: 'Outfit', sans-serif;
+            color: theme('colors.dark-text');
+        }
+        h1 {
+            font-weight: 800;
+        }
+        h2 {
+            font-weight: 700;
+        }
+        h3 {
+            font-weight: 600;
+        }
+        .card {
+            background-color: theme('colors.card-bg');
+            border-radius: 1.5rem; /* More rounded */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.04);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden; /* Ensure rounded corners for image area */
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12), 0 6px 16px rgba(0, 0, 0, 0.06);
+        }
+        .link-accent {
+            color: theme('colors.accent');
+            font-weight: 600;
+            text-decoration: none;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .link-accent::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width: 100%;
+            height: 2px;
+            background-color: theme('colors.accent');
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.3s ease;
+        }
+        .link-accent:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+        .poi-image-placeholder {
+            min-height: 200px;
+            background: linear-gradient(45deg, theme('colors.accent') 0%, theme('colors.light-accent') 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.25rem;
+            font-weight: 700;
+            text-align: center;
+            padding: 1rem;
+            border-top-left-radius: 1.5rem;
+            border-top-right-radius: 1.5rem;
+        }
+    </style>
+</head>
+<body class="font-body text-dark-text antialiased">
+
+    <!-- Header Section -->
+    <header class="py-16 px-4 md:py-20 text-center bg-gradient-to-br from-primary-bg to-light-accent rounded-b-3xl shadow-lg">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-6xl lg:text-7xl font-display leading-tight mb-4 tracking-tight">
+                台中市新社區
+            </h1>
+            <h2 class="text-2xl md:text-3xl lg:text-4xl font-display text-dark-text/80">
+                3-Hour Itinerary
+            </h2>
+        </div>
+    </header>
+
+    <!-- Main Itinerary Text Section -->
+    <main class="container mx-auto px-4 py-16 md:py-24 max-w-4xl">
+        <section class="mb-16">
+            <p class="text-lg md:text-xl mb-6">
+                歡迎來到台中市新社區！這個被譽為台中後花園的山區小鎮，以其美麗的花卉、清新的空氣和美味的香菇聞名。如果您只有短短3小時，別擔心，我們為您設計了一份精華遊程，帶您感受新社獨特的魅力，不虛此行！準備好享受一趟充滿自然與美食的小旅行了嗎？
+            </p>
+
+            <h3 class="text-3xl font-display font-semibold mb-6 text-accent">第一站 (1.5小時): 漫遊歐式秘境 – 新社莊園 (新社古堡)</h3>
+            <p class="text-lg md:text-xl mb-6">
+                <strong>活動內容:</strong> 抵達新社後，首先前往充滿異國情調的「新社莊園」。這座有著護城河、酒莊、羅馬拱柱與花園的歐式古堡，是新社最受歡迎的景點之一。您可以漫步在石砌的步道上，欣賞古堡建築與周圍自然景觀的完美融合，感受彷彿置身歐洲的浪漫氛圍。這裡處處是拍照打卡的絕佳地點，也可以在園區內的咖啡廳小憩，享受一份悠閒與寧靜。
+            </p>
+            <p class="text-lg md:text-xl mb-10">
+                <strong>實用建議:</strong> 莊園內有許多高低起伏的路徑，建議穿著舒適的鞋子。
+            </p>
+
+            <h3 class="text-3xl font-display font-semibold mb-6 text-accent">第二站 (1.5小時): 品嚐在地美味 – 新社香菇街</h3>
+            <p class="text-lg md:text-xl mb-6">
+                <strong>活動內容:</strong> 離開新社莊園後，驅車前往車程不遠的「新社香菇街」。新社是台灣重要的香菇產地，這裡匯集了各式各樣的香菇店家和餐廳。您可以品嚐新鮮現炒的香菇料理、香菇羹，或是選購品質優良的新鮮香菇、乾燥香菇及多樣化的香菇伴手禮。這是一個體驗在地風味、感受農特產魅力的好地方，也能為您的旅程增添獨特的味覺記憶。
+            </p>
+            <p class="text-lg md:text-xl mb-10">
+                <strong>實用建議:</strong> 建議挑選一間人氣店家，品嚐一碗熱騰騰的香菇羹，感受香菇的鮮甜，並可購買一些伴手禮回家。
+            </p>
+
+            <p class="text-lg md:text-xl text-dark-text/80">
+                短短3小時，我們穿越了新社的歐式風情，也品嚐了在地特色美味。希望這趟精華之旅，能讓您對台中新社留下美好的印象。期待您下次有更充裕的時間，能深入探索這個美麗的山城！
+            </p>
+        </section>
+
+        <!-- Points of Interest Section -->
+        <section class="py-16">
+            <h2 class="text-4xl md:text-5xl font-display font-bold text-center mb-16 relative">
+                <span class="relative z-10">探索推薦景點</span>
+                <span class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 bg-light-accent rounded-full opacity-50 blur-xl"></span>
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 lg:gap-16">
+
+                <!-- Point of Interest Card: 新社莊園 (新社古堡) -->
+                <div class="card p-0">
+                    <div class="poi-image-placeholder">
+                        <span>新社莊園</span>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-3xl font-display font-semibold mb-4 text-dark-text">新社莊園 (新社古堡)</h3>
+                        <p class="text-dark-text/80 mb-6">
+                            抵達新社後，首先前往充滿異國情調的「新社莊園」。這座有著護城河、酒莊、羅馬拱柱與花園的歐式古堡，是新社最受歡迎的景點之一。您可以漫步在石砌的步道上，欣賞古堡建築與周圍自然景觀的完美融合，感受彷彿置身歐洲的浪漫氛圍。
+                        </p>
+                        <div class="mb-6">
+                            <p class="font-semibold text-dark-text/90 mb-2">地址:</p>
+                            <p class="text-dark-text/70">
+                                No. 23, Xiezhong Street, Xinshe District, Taichung City 426, Taiwan (R.O.C.).
+                                (一些資料也顯示為 No. 65, Xiezhong Street, Xinshe District, Taichung City).
+                            </p>
+                        </div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=%E6%96%B0%E7%A4%BE%E8%8E%8A%E5%9C%92%20(%E6%96%B0%E7%A4%BE%E5%8F%A4%E5%A0%A1),%20%E5%8F%B0%E4%B8%AD%E5%B8%82%E6%96%B0%E7%A4%BE%E5%8D%80" target="_blank" rel="noopener noreferrer" class="link-accent inline-flex items-center group">
+                            查看地圖
+                            <svg class="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Point of Interest Card: 新社香菇街 -->
+                <div class="card p-0">
+                    <div class="poi-image-placeholder">
+                        <span>新社香菇街</span>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-3xl font-display font-semibold mb-4 text-dark-text">新社香菇街</h3>
+                        <p class="text-dark-text/80 mb-6">
+                            離開新社莊園後，驅車前往車程不遠的「新社香菇街」。新社是台灣重要的香菇產地，這裡匯集了各式各樣的香菇店家和餐廳。您可以品嚐新鮮現炒的香菇料理、香菇羹，或是選購品質優良的新鮮香菇、乾燥香菇及多樣化的香菇伴手禮。
+                        </p>
+                        <div class="mb-6">
+                            <p class="font-semibold text-dark-text/90 mb-2">主要地址:</p>
+                            <p class="text-dark-text/70 mb-4">
+                                協中街 (Xiezhong Street), 新社區, 台中市.
+                            </p>
+                            <p class="font-semibold text-dark-text/90 mb-2">推薦店家:</p>
+                            <ul class="list-disc list-inside text-dark-text/70 space-y-1">
+                                <li>百菇莊 (No. 2-1, Xiezhong Street)</li>
+                                <li>阿亮香菇園 (No. 131, Xiezhong Street)</li>
+                                <li>菇神 (287 Xiezhong Street)</li>
+                            </ul>
+                        </div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=%E6%96%B0%E7%A4%BE%E9%A6%99%E8%8F%87%E8%A1%97,%20%E5%8F%B0%E4%B8%AD%E5%B8%82%E6%96%B0%E7%A4%BE%E5%8D%80" target="_blank" rel="noopener noreferrer" class="link-accent inline-flex items-center group">
+                            查看地圖
+                            <svg class="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
